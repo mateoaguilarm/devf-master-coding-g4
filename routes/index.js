@@ -1,7 +1,9 @@
 const express = require('express');
 const router = express.Router();
 const userController = require('../controllers/userController');
-const postController = require('../controllers/postController')
+const postController = require('../controllers/postController');
+
+const moment = require('moment');
 
 // Rutas
 router.get('/', (_, response) => {
